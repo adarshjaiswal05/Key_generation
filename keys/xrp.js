@@ -1,6 +1,7 @@
-//******************************************    XRP  ********************************************************** */
 const keypairs = require("ripple-keypairs");
 const { decodeAccountID } = require("ripple-address-codec");
+
+//******************************************    XRP  ********************************************************** */
 
 function generateXRPKeys() {
   const seed = keypairs.generateSeed();
@@ -25,3 +26,7 @@ function generateXRPKeys() {
     // address: address,
   };
 }
+
+module.exports = {
+  generateXRPKeys,
+};

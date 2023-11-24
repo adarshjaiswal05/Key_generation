@@ -1,3 +1,4 @@
+const NodeRSA = require("node-rsa");
 //******************************************    Avalanche  ********************************************************** */
 
 function generateAvalancheKeys() {
@@ -10,3 +11,7 @@ function generateAvalancheKeys() {
   console.log("Avalanche Private Key:", privateKey);
   return { publicKey, privateKey };
 }
+
+module.exports = {
+  generateAvalancheKeys,
+};

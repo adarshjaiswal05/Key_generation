@@ -1,5 +1,6 @@
-//*********************************************** solana  ***************************************************************** */
 const nacl = require("tweetnacl");
+
+//*********************************************** solana  ***************************************************************** */
 
 function generateSolanaKeys() {
   const privateKey = nacl.sign.keyPair();
@@ -17,3 +18,7 @@ function generateSolanaKeys() {
 
   return { privateKeyBase58, publicKey, address };
 }
+
+module.exports = {
+  generateSolanaKeys,
+};

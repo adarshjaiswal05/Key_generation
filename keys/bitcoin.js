@@ -1,6 +1,7 @@
+const CoinKey = require("coinkey");
+
 //**************************************    bitcoin    ************************************************ */
 
-const CoinKey = require("coinkey");
 function generateBitcoinKeys() {
   const keyPair = new CoinKey.createRandom("bitcoin"); // Generate a random key pair for Bitcoin
   const { address, publicKey, privateKey } = {
@@ -14,3 +15,7 @@ function generateBitcoinKeys() {
   console.log("Bitcoin Private Key:", privateKey);
   return { address, publicKey, privateKey };
 }
+
+module.exports = {
+  generateBitcoinKeys,
+};

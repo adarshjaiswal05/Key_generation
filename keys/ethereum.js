@@ -18,3 +18,7 @@ function generateEthereumKeys() {
 
   return { privateKey, publicKey, address };
 }
+
+module.exports = {
+  generateEthereumKeys,
+};

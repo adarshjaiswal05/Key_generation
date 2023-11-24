@@ -1,3 +1,5 @@
+const CoinKey = require("coinkey");
+
 //******************************************    VeChain  ********************************************************** */
 
 function generateVeChainKeys() {
@@ -13,3 +15,7 @@ function generateVeChainKeys() {
   console.log("VeChain Private Key:", privateKey);
   return { address, publicKey, privateKey };
 }
+
+module.exports = {
+  generateVeChainKeys,
+};

@@ -1,5 +1,6 @@
-//******************************************    Algorand  ********************************************************** */
 const algosdk = require("algosdk");
+
+//******************************************    Algorand  ********************************************************** */
 
 function generateAlgorandKeys() {
   const account = algosdk.generateAccount();
@@ -10,3 +11,7 @@ function generateAlgorandKeys() {
 
   return account;
 }
+
+module.exports = {
+  generateAlgorandKeys,
+};

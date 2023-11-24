@@ -1,5 +1,5 @@
-//**************************************    litecoin    ************************************************ */
 const bitcoin = require("bitcoinjs-lib");
+//**************************************    litecoin    ************************************************ */
 
 function generateLitecoinKeys() {
   // Generate a random 256-bit private key
@@ -27,3 +27,7 @@ function generateLitecoinKeys() {
 }
 
 generateLitecoinKeys();
+
+module.exports = {
+  generateLitecoinKeys,
+};

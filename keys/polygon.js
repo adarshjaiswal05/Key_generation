@@ -1,3 +1,4 @@
+const { ethers } = require("ethers");
 //******************************************    POLYGON  ********************************************************** */
 
 function generatePolygonKeys() {
@@ -16,3 +17,7 @@ function generatePolygonKeys() {
 
   return { privateKey, publicKey, address };
 }
+
+module.exports = {
+  generatePolygonKeys,
+};

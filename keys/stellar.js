@@ -1,6 +1,6 @@
-//******************************************    STELLAR  ********************************************************** */
-
 const StellarSdk = require("stellar-sdk");
+
+//******************************************    STELLAR  ********************************************************** */
 
 function generateStellarKeys() {
   const pair = StellarSdk.Keypair.random();
@@ -21,3 +21,7 @@ function generateStellarKeys() {
     address: address,
   };
 }
+
+module.exports = {
+  generateStellarKeys,
+};

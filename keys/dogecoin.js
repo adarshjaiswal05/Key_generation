@@ -1,3 +1,5 @@
+const CoinKey = require("coinkey");
+
 //**************************************    dogecoin    ************************************************ */
 
 function generateDogecoinKeys() {
@@ -13,3 +15,7 @@ function generateDogecoinKeys() {
   console.log("Dogecoin Private Key:", privateKey);
   return { address, publicKey, privateKey };
 }
+
+module.exports = {
+  generateDogecoinKeys,
+};

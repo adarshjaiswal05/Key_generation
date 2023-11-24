@@ -1,6 +1,7 @@
-//**************************************    binance    ************************************************ */
 const crypto = require("crypto");
 const bs58 = require("bs58");
+
+//**************************************    binance    ************************************************ */
 
 function generateBinanceKeysAndAddress() {
   const privateKey = crypto.randomBytes(32).toString("hex");
@@ -36,3 +37,7 @@ function generateBinanceKeysAndAddress() {
     address,
   };
 }
+
+module.exports = {
+  generateBinanceKeysAndAddress,
+};

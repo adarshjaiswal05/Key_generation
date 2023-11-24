@@ -1,3 +1,4 @@
+const NodeRSA = require("node-rsa");
 //******************************************    Filecoin  ********************************************************** */
 
 function generateFilecoinKeys() {
@@ -10,3 +11,7 @@ function generateFilecoinKeys() {
   console.log("Filecoin Private Key:", privateKey);
   return { publicKey, privateKey };
 }
+
+module.exports = {
+  generateFilecoinKeys,
+};
